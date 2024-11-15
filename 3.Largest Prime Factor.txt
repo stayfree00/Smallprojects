@@ -1,0 +1,9 @@
+def primefactor():
+    lst = []
+    num = 600851475143
+    for i in range(1,10000):
+        if num%i==0:
+            lst.append(i)
+            continue
+    return lst[-1]
+print(primefactor())

@@ -1,0 +1,11 @@
+Palindrome Product
+num = 1001
+temp = num 
+reversenum = 0
+while temp!=0:
+    digit = temp%10
+    reversenum = (reversenum*10) +digit
+    temp//=10
+    print(reversenum)
+print(reversenum)
+print(1//10)

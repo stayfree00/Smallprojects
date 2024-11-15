@@ -1,0 +1,18 @@
+#Lotto 6/55 random number generator
+import random
+
+Lst = []
+#Prompts the user to input list range
+number = int(input("Enter a number: "))
+#Prompts the user to input max number range
+nrange = int(input("Enter range: "))
+#Loops the random generator until list length is the same with number
+while len(Lst) < number:
+    rand = random.randint(1,nrange)
+    if rand in Lst:
+        continue
+    else:
+        Lst.append(rand)
+print(Lst)        
+        
+        

@@ -1,0 +1,11 @@
+def multi():
+
+    lst = []
+    total = 0
+    num = int(input("Enter a number: "))
+    for i in range(1,num):
+        if i%3==0 or i%5==0:
+            lst.append(i)
+            total+=i
+    return total
+print(multi())
